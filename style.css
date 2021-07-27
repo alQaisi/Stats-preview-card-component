@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+    font-family: 'Inter', sans-serif;
+    Font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+.lite-text,h3 span{
+    color:hsla(0, 0%, 100%, 0.6);
+    line-height:1.5;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.main-text{
+    color: hsl(0, 0%, 100%);
+}
+h1 span{
+    color: hsl(277, 64%, 61%);
+}
+h3 span{
+    display: block;
+    margin-top:7px;
+    Font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.container{
+    overflow: hidden;
+    border-radius: 7px;
+    box-sizing: border-box;
+    background-color: hsl(244, 38%, 16%);
+    width:65%;
+    height:50%;
+    max-width: 1200px;
+    min-width: 900px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+.text-area,.background-area{
+    width:50%;
+    height:100%;
+}
+.text-area{
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    padding:8% 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.background-area{ 
+    background-image: url('./images/image-header-desktop.jpg');
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+}
+.stats{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+}
+#overlay{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: hsl(277, 78%, 33%);
+    opacity: .60;
+    filter: brightness(70%);
+}
+@media only screen and (max-width: 1000px) { 
+    .container {
+      flex-direction: column-reverse;
+      min-width:unset;
+      height:850px;
+      margin:500px 0;
+      min-height: unset;
+      text-align: center;
+    }
+    .text-area,.background-area{
+        width:100%;
+    }
+    .text-area{
+        justify-content: unset;
+    }
+    .stats{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .background-area{ 
+        background-image: url('./images/image-header-mobile.jpg');
+    }
+}
+@media only screen and (max-height: 820px) {
+    body{
+        height:125vh;
+        padding:45px 0;
+    }
+}
