@@ -102,9 +102,33 @@ h3 span{
         background-image: url('./images/image-header-mobile.jpg');
     }
 }
-@media only screen and (max-height: 820px) {
+@media only screen and (max-height: 825px) {
     body{
         height:125vh;
-        padding:45px 0;
+        padding:35px 0;
+    }
+}
+@media only screen and (max-height: 600px) {
+    body{
+        height:150vh;
+        padding:40px 0;
+    }
+}
+@media only screen and (max-width: 700px) and (orientation:landscape) {
+    body{
+        height:225vh;
+        padding:65px 0;
+    }
+}
+@media only screen and (max-width: 830px) and (max-height: 450px) and (orientation:landscape) {
+    body{
+        height:200vh;
+        padding:75px 0;
+    }
+}
+@media only screen and (max-width: 570px) and (max-height: 320px) and (orientation:landscape) {
+    body{
+        height:200vh;
+        padding:115px 0;
     }
 }
