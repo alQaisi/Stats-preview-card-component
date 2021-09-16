@@ -3,11 +3,9 @@ body{
     font-family: 'Inter', sans-serif;
     Font-size: 15px;
     background-color: hsl(233, 47%, 7%);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    display: grid;
+    place-items: center;
+    height: 100%;
     min-height: 100vh;
     overflow-y: scroll;
 }
@@ -32,6 +30,7 @@ h3 span{
 }
 .container{
     overflow: hidden;
+    margin:50px 0;
     border-radius: 7px;
     box-sizing: border-box;
     background-color: hsl(244, 38%, 16%);
@@ -82,7 +81,6 @@ h3 span{
       flex-direction: column-reverse;
       min-width:unset;
       height:850px;
-      margin:500px 0;
       min-height: unset;
       text-align: center;
     }
@@ -100,35 +98,5 @@ h3 span{
 @media only screen and (max-width: 950px) {
     .background-area{ 
         background-image: url('./images/image-header-mobile.jpg');
-    }
-}
-@media only screen and (max-height: 825px) {
-    body{
-        height:125vh;
-        padding:35px 0;
-    }
-}
-@media only screen and (max-height: 600px) {
-    body{
-        height:150vh;
-        padding:40px 0;
-    }
-}
-@media only screen and (max-width: 700px) and (orientation:landscape) {
-    body{
-        height:225vh;
-        padding:65px 0;
-    }
-}
-@media only screen and (max-width: 830px) and (max-height: 450px) and (orientation:landscape) {
-    body{
-        height:200vh;
-        padding:75px 0;
-    }
-}
-@media only screen and (max-width: 570px) and (max-height: 320px) and (orientation:landscape) {
-    body{
-        height:200vh;
-        padding:115px 0;
     }
 }
