@@ -9,11 +9,15 @@ body{
     min-height: 100vh;
     overflow-y: scroll;
 }
-.lite-text,h3 span{
+.lite-text,h2 span{
     color:hsla(0, 0%, 100%, 0.6);
     line-height:1.5;
     font-weight: 400;
     letter-spacing: 1px;
+}
+.lite-text{
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
 }
 .main-text{
     color: hsl(0, 0%, 100%);
@@ -21,7 +25,12 @@ body{
 h1 span{
     color: hsl(277, 64%, 61%);
 }
-h3 span{
+h2{
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+h2 span{
     display: block;
     margin-top:7px;
     Font-size: 13px;
